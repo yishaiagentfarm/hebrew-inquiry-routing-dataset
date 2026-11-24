@@ -26,11 +26,11 @@ The cases include the hard ones:
 | clear | 8 | The baseline |
 | mixed-language | 3 | Hebrew and English in one message |
 | missing-scope | 2 | Too little detail to route, so it goes to review |
-| negation | 2 | "Not a website, a…" |
+| negation | 2 | The message rules something out ("We do not need a redesign…") and asks for something else |
 | instruction-like-text | 2 | Text that tries to tell the classifier what to do |
-| multiple-intents | 1 | Two requests in one message |
+| multiple-intents | 1 | Two requests in one message, so it goes to review |
 
-Routes: `automation` 6, `review` 5, `ai` 3, `websites` 2, `software` 2. Languages: Hebrew 11, English 4, mixed 3.
+Routes: `automation` 6, `review` 5, `ai` 3, `websites` 2, `software` 2. `ai` means the task needs a model to interpret text; `automation` means a fixed rule is enough. Languages: Hebrew 11, English 4, mixed 3.
 
 ## Files
 
@@ -55,7 +55,7 @@ The messages are invented and few. Passing this set does not show a router is re
 
 ## Who made this
 
-[yishai.xyz](https://yishai.xyz/en/) is a technology studio in Israel that builds websites, custom software and business automation with AI, in Hebrew and English. Background: [Using AI to triage inquiries in Hebrew](https://yishai.xyz/en/guides/ai-inquiry-triage/) ([בעברית](https://yishai.xyz/guides/ai-inquiry-triage/)) and the [interactive version of this dataset](https://yishai.xyz/en/resources/inquiry-routing-dataset/).
+[yishai.xyz](https://yishai.xyz/en/) is a technology studio in Israel that builds websites, custom software and business automation with AI, in Hebrew and English. Background: [Using AI to triage inquiries in Hebrew](https://yishai.xyz/en/guides/ai-inquiry-triage/) ([בעברית](https://yishai.xyz/guides/ai-inquiry-triage/)) and the [dataset page on yishai.xyz](https://yishai.xyz/en/resources/inquiry-routing-dataset/).
 
 Licence: CC BY 4.0. Credit "yishai.xyz" with a link to https://yishai.xyz/en/.
 
